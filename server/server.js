@@ -45,7 +45,7 @@ app.post('/calculate', (req, res) => {
         numberOne: numberOne,
         operator: operator,
         numberTwo: numberTwo,
-        answer: Number(calculationResult)
+        answer: calculationResult
     }
     
     calculationHistory.push(newCalculationSet);

@@ -27,7 +27,6 @@ function calculate () {
         method: 'POST',
         data: newCalculation
     }).then( (response) =>{
-        console.log(response);
     })
 
     history();
@@ -38,12 +37,16 @@ function history () {
         url: '/history',
         method: 'GET'
     }).then( (response) => {
+        let currentAnswer = response[response.length-1].answer
+
         $('#calcHistory').empty();
         for ( let i = 0; i < response.length; i++) {
+            $('#currentAnswer').text(currentAnswer);
             $('#calcHistory').append(`
             <li>${response[i].numberOne} ${response[i].operator} ${response[i].numberTwo} = ${response[i].answer}</li>
             `)
         }
+        
     })
 }
 

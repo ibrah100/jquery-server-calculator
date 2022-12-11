@@ -18,15 +18,15 @@ Welcome to the weekend challenge!
 
 5. ✅ The server should be able to handle Addition, Subtraction, Multiplication, and Division. 
 
-6. Once the calculation is complete, send back the OK. You should do a GET request after the POST to get the actual calculation.
+6. ✅ Once the calculation is complete, send back the OK. You should do a GET request after the POST to get the actual calculation.
 
 ### History
 
-7. Keep a historical record of all math operations and solutions on the server. 
+7. ✅ Keep a historical record of all math operations and solutions on the server. 
 
-8. Display a list of all previous calculations on the page when it loads using a GET request. 
+8. ✅ Display a list of all previous calculations on the page when it loads using a GET request. 
 
-9. Update the list when a new calculation is made.
+9. ✅ Update the list when a new calculation is made.
 
 > NOTE: History should exist even after refreshing the page. It's expected that the history will go away after restarting the server. We'll talk about long term data storage next week.
 
